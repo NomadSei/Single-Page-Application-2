@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de RFC</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Simulador de RFC</h2>
+        <form id="rfc-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" placeholder="Ingresa tu apellido paterno">
+
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" placeholder="Ingresa tu apellido materno">
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento">
+
+            <button type="button" id="generarRFC">Generar RFC</button>
+        </form>
+
+        <div class="output">
+            <p id="resultadoRFC"></p>
+        </div>
+
+        <div class="navigation">
+            <button type="button" onclick="window.location.href='api.html'">Ir a Consultar API</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
+
